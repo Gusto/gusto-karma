@@ -13,8 +13,9 @@ case "$1" in
   'run')
     echo "Running Gusto-Karma Tests for ${2}.."
     karma run node_modules/gusto-karma/lib/karma.config.js  -- $2
+    ;;
   *)
-    echo 'Usage gusto-karma (test|server|)'
+    echo 'Usage gusto-karma (test|server|run)'
     exit 0
     ;;
 esac
