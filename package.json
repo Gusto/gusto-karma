@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Wrapper around karma for usage at Gusto",
   "main": "index.js",
+  "bin": {
+    "gusto-karma": "./bin/gusto-karma.sh"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
