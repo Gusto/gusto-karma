@@ -1,6 +1,6 @@
 {
   "name": "gusto-karma",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrapper around karma for usage at Gusto",
   "main": "index.js",
   "bin": {
@@ -13,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "chai": "3.5.0",
-    "karma": "1",
     "karma-chai": "0.1.0",
     "karma-chrome-launcher": "0.2.3",
     "karma-fixture": "0.2.6",
@@ -33,5 +32,8 @@
   },
   "devDependencies": {
     "webpack": "1"
+  },
+  "peerDependencies": {
+    "karma": "1"
   }
 }
