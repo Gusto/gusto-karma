@@ -9,7 +9,7 @@ Install Gusto-Karma along with Gusto-Webpack and it will provide several command
 - *`gusto-karma run <file>`* - If a test server is running, runs the tests for files matching the `<file>` path. Especially helpful when running the server with the `--no-auto-watch` flag.
 
 Add a `karma.config.js` in `frontend/javascripts/spec` to configure specific Karma options and to configure:
-```
+```js
 module.exports = function (config) {
   config.set({
     gustoKarma: {
@@ -30,4 +30,30 @@ module.exports = function (config) {
 - It will load all files containing `_spec` in `frontend/javascripts/spec` with the `webpack` and `sourcemap` Karma preprocessors.
 
 #### In CI
-When running in CI, Gusto-Karma will output both `mocha` and `junit` test results.
+When running in CI (`env.IN_CI`), Gusto-Karma will output both `mocha` and `junit` test results.
+
+#### Per-Project Config
+Individual projects can configure Gusto-Karma in `frontend/javascripts/spec/karma.config.js`.
+
+#### Developer Config
+Developers can configure Gusto-Karma for their machine in `karma.config.development_override.js`. This file is optional.
+
+Options developers might want to set:
+- `gustoKarma.desktopNotifications`: set to `false` to disable desktop notifications when tests complete
+  - You can also set the environment variable `NO_NOTIF=TRUE` to disable notifications
+
+When you add Gusto-Karma to your project, do the following:
+- Add `frontend/javascripts/spec/karma.config.development_override.js` to your project's gitignore
+- Commit this template to your repo as `frontend/javascripts/spec/karma.config.development_override.js.sample`:
+
+```js
+// Use this file to configure Gusto-Karma with your machine-specific overrides.
+
+module.exports = function(config) {
+  config.set({
+    gustoKarma: {
+      desktopNotifications: false
+    }
+  });
+};
+```
