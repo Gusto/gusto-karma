@@ -1,6 +1,6 @@
 {
   "name": "@gusto/gusto-karma",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Wrapper around karma for usage at Gusto",
   "main": "index.js",
   "bin": {
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bdd-lazy-var": "^1.2.1",
     "chai": "3.5.0",
     "karma-chai": "0.1.0",
     "karma-chrome-launcher": "2.0.0",
