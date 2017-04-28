@@ -1,6 +1,6 @@
 {
   "name": "@gusto/gusto-karma",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Wrapper around karma for usage at Gusto",
   "main": "index.js",
   "bin": {
