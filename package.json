@@ -1,6 +1,6 @@
 {
   "name": "@gusto/gusto-karma",
-  "version": "2.2.3",
+  "version": "3.1.0",
   "description": "Wrapper around karma for usage at Gusto",
   "main": "index.js",
   "bin": {
@@ -13,26 +13,26 @@
   "license": "ISC",
   "dependencies": {
     "chai": "3.5.0",
-    "karma-chai": "0.1.0",
-    "karma-chrome-launcher": "2.0.0",
-    "karma-fixture": "0.2.6",
-    "karma-json-fixtures-preprocessor": "0.0.6",
-    "karma-junit-reporter": "0.3.8",
-    "karma-mocha": "1.3.0",
-    "karma-mocha-reporter": "2.2.2",
-    "karma-phantomjs-launcher": "1.0.0",
-    "karma-sinon": "1.0.4",
-    "karma-sinon-chai": "1.2.3",
-    "karma-sourcemap-loader": "0.3.7",
-    "karma-webpack": "1.7.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-fixture": "^0.2.6",
+    "karma-json-fixtures-preprocessor": "^0.0.6",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.4",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-sinon": "^1.0.5",
+    "karma-sinon-chai": "^1.3.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.4",
     "mocha": "3.2.0",
     "node-notifier": "^5.0.2",
     "phantomjs-prebuilt": "2.1.13",
-    "sinon": "1.17.5",
-    "sinon-chai": "2.8.0"
+    "sinon": "2",
+    "sinon-chai": "^2.13.0"
   },
   "devDependencies": {
-    "webpack": "1"
+    "webpack": "3"
   },
   "peerDependencies": {
     "karma": "1"
