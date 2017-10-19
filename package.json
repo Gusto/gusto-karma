@@ -28,7 +28,7 @@
     "mocha": "3.2.0",
     "node-notifier": "^5.0.2",
     "phantomjs-prebuilt": "2.1.13",
-    "sinon": "2",
+    "sinon": "4",
     "sinon-chai": "^2.13.0"
   },
   "devDependencies": {
