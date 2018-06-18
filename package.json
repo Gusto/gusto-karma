@@ -32,9 +32,9 @@
     "sinon-chai": "^2.14.0"
   },
   "devDependencies": {
-    "webpack": "3"
+    "webpack": "3 || 4"
   },
   "peerDependencies": {
-    "karma": "1"
+    "karma": "1 || 2"
   }
 }
