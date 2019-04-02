@@ -26,8 +26,14 @@ module.exports = function (config) {
 - A `karma.config.js` must be present in `frontend/javascripts/spec`
 
 ### Configuration
-- Karma will be loaded by default with the `mocha`, `sinon`, `chai`, `sinon-chai` frameworks.
+- Karma will be loaded by default with the `mocha`, `sinon`, `chai` frameworks.
 - It will load all files containing `_spec` in `frontend/javascripts/spec` with the `webpack` and `sourcemap` Karma preprocessors.
+- If you want to add `sinon-chai` you must add it to the project's package.json then configure it: 
+  ```js
+  import sinonChai from 'sinon-chai';
+  ...
+  window.chai.use(sinonChai);
+  ```
 
 #### In CI
 When running in CI (`env.IN_CI`), Gusto-Karma will output both `mocha` and `junit` test results.
